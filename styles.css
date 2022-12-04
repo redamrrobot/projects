@@ -220,7 +220,6 @@ button{
     
     width:157px;
     height:264px;
-    background-image: url(img/action1.png);
     animation: action1 1s steps(6) infinite ;
 }
 
@@ -237,7 +236,6 @@ button{
 .action2{
     width:268px;
     height:155px;
-    background-image: url(img/action2.png);
     animation: action2 1s steps(6) infinite,action2_move 2s linear infinite alternate ;
     
 }
@@ -265,7 +263,6 @@ button{
 .action3{
     width:183px;
     height:226px;
-    background-image: url(img/action3.png);
     animation: action3 1s steps(6) infinite;
 
 }
