@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <title>Game Character</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+
+</head>
+<body>
+    <!-- Cool programming projects -->
+
+
+    <div class="primary_container">
+      <img id="mainCharacter" src="chibi_neutre.png" style="width: 27%; height: 50%; position: absolute; margin-right: 70%;"></img>
+      <img id="happyCharacter" src="chibi_contente.png" style="width: 27%; height: 50%; position: absolute; margin-right: 70%; display: none;"></img>
+      <img id="madCharacter" src="chibi_abasourdie.png" style="width: 27%; height: 50%; position: absolute; margin-right: 70%; display: none;"></img>
+      <img id="sadCharacter" src="chibi_contrariee.png" style="width: 27%; height: 50%; position: absolute; margin-right: 70%; display: none;"></img>
+      <img id="verySadCharacter" src="chibi_triste.png" style="width: 27%; height: 50%; position: absolute; margin-right: 70%; display: none;"></img>
+      <img id="doubtfulCharacter" src="chibi_choquee.png" style="width: 27%; height: 50%; position: absolute; margin-right: 70%; display: none;"></img>
+
+      
+      <!-- bulles de texte -->
+        <div id="speech-bubble"><p id="tekstBubble">Coucou moi c'est <span class="firstName">Nahed</span>!<br><br> Aujourd'hui c'est mon anniversaire, <br>l'occasion idéale d'en savoir un peu <br> plus sur moi n'est-ce pas? <span class="ec ec-blush"></span>
+
+
+
+        </p>
+            <p id="tekstBubbleYes" style="display: none;">Je savais que t'allais faire le bon <br>choix! Dans ce cas-là, place ta souris <br> sur le menu qui s'affichera en haut <br> à gauche de ton écran et c'est parti <br> pour l'aventure! <span class="ec ec-popcorn"></span>
+
+
+            </p>
+         <p id="tekstBubbleNo" style="display: none;">Tu manques pas de culot.... tu te <br> prends pour qui? C'est pas comme si <br> t'avais réellement le choix... &#128545</p>
+         <p id="tekstBubbleAbout" style="display: none;">On dirait un dictionnaire... Sorry not <br> sorry, mais il y a tellement de choses <br> à dire parce que que je suis trop <br> intéressante et tu vas rien faire. <span class="ec ec-relieved"></span>
+         </p>
+         <p id="tekstBubbleYesAfterNo" style="display: none;">C'est bien ce qu'il me semblait... <br>tu le regretteras pas! <span class="ec ec-triumph"></span>
+         </p>
+         <p id="tekstBubblePassion" style="display: none;">Par où commencer... les dizis n'ont pas <br> de secret pour moi. <span class="ec ec-smiling-face-with-three-hearts"></span>
+            Mais pas que, je te <br> laisse découvrir ça visuellement avec <br> un top 10 de mes coups de cœur. <br>C'est une liste non exhaustive...! <span class="ec ec-sunglasses"></span></p>
+            <p id="tekstBubbleENFJ" style="display: none;">Il m'arrive parfois de m'identifier à <br> certaines personnes (fictives). Mais <br> si je partage la même personnalité, <br> c'est encore mieux! Voici une liste de <br> célébrités qui sont aussi ENFJ. <span class="ec ec-hugs"></span>
+            </p>
+            <p id="tekstBubbleFruits" style="display: none;">Qu'est-ce que je t'ai dit... t'es sûre? <br> Je t'aurai prévenue...<span class="ec ec-confounded"></span>
+            </p>
+            <p id="tekstBubbleSport" style="display: none;">Mon club de cœur... L'époque où on <br> roulait sur l'Europe semble bien <br> révolue... mais j'en garde d'excellents <br> souvenirs. Quoi qu'il arrive: <br> VISCA BARCA, FORCA BARCA! <span class="ec ec-blue-heart"></span>
+            </p>
+            <p id="tekstBubbleParcours" style="display: none;">Assez rigolé! C'est un secret de <br> polichinelle que je sois étudiante en <br> comm & PR. <span class="ec ec-nerd-face"></span> Quand tu auras fini de <br> lire ma timeline, clique sur le bouton <br> en bas à gauche... 
+            </p>
+        </div>
+
+        <div id="speech-bubbleEnd" style="display: none;">
+        <p id="tekstBubbleEnd" style="display: none;">Tqt tu n'as pas perdu! Mais comme toute bonne chose a une fin, voic la fin du jeu.. <br> C'était un récapitulatif de tout ce que le développeur sait déjà sur toi. Il te <br> connaît qu'à 5%, mais c'était assez pour pouvoir programmer tout ça, en espérant <br> atteindre les 100%. Au fil du temps, le jeu connaîtra des mises à jour: plus il te <br> connaîtra, plus le jeu sera poussé. Tu viens d'inaugurer la première version du jeu <br> félicitations à toi! Le développeur espère que t'as pris du plaisir à avoir joué à <br> ce jeu original tout comme lui a pris du plaisir à l'avoir codé. <br> Encore un joyeux anniversaire!
+        </p>
+        </div>
+
+<!-- boutons -->
+
+        <button type="button" class="btn btn-success" id="yes" onclick="hideButton(this)" style="display: none;">Il était temps!</button>
+        <button type="button" class="btn btn-danger" id="no" onclick="noButton(this)" style="display: none;">J'ai que ça à faire!? </button>
+        <button type="button" class="btn btn-success" id="yesAfterNo" onclick="yesAfterNo(this)" style="display: none;">Bon bah tant qu'à faire finalement...</button>
+        <button type="button" class="btn btn-danger" id="endButton" onclick="endButton(this)" style="display: none;">GAME OVER</button>
+
+<!-- About me -->
+
+        <div class="card border-success mb-3" style="max-width: 60rem; margin-left: 60%; display: none; background-color: black;" id="cardPresentation" >
+            <div class="card-header bg-transparent border-success" style="color: white;">Qui suis-je?</div>
+            <div class="card-body text-success">
+              <h5 class="card-title" >Nahed, aka "crackheed"</h5>
+              <p class="card-text" style="font-style: italic;"><span class="presentation">Comme tu l'as constaté, je suis une fille de 23 ans maintenant prénommée Nahed qui vit à Jette. Si j'écris en violet, c'est que c'est ma couleur préférée!</span></p>
+            <p class="card-text" style="font-style: italic;">Et si je fais la transition en vert maintenant, c'est que le vert est effectivement ma deuxième couleur préférée. Maintenant, trève de bavardage et passons au vif du sujet, explorons la personne en moi...</p>
+            <p class="card-text"><span class="presentationSecond" style="font-style: italic; color: white;">Je suis une jeune tangeroise, avec un léger côté rif tout de même ce qui explique mon sang chaud par moment donc pas m'énerver! Mais au final, c'est plutôt une personne calme et réservée qui se présente face à vous. Toujours soucieuse des autres, la gentillesse prime sur tous les autres traits de caractère. Cerise sur le gâteau, l'intelligence est bel et bien installé dans mon petit cerveau mais attention... je suis pas une geek!!! </span></p>
+    
+        </div>
+          </div>
+
+        <div class="first_container secondary_container">
+            <div class="character_box " id="character_box"></div>
+        </div>
+
+        <div class="dropdown" id="showMenu" style="display: none;" >
+            <button class="dropbtn">☰</button>
+                 <div class="dropdown-content">
+            <button style="background-color: pink; color: white;" id="action1" onclick="action1()">About me</button>
+            <button style="background-color: pink; color: white;" id="action2" onclick="action2()">Mes passions</button>
+            <button style="background-color: pink; color: white;" id="action3" onclick="action3()">Moi & le multiverse</button>
+            <button style="background-color: pink; color: white;" id="action4" onclick="action4()">NE CLIQUE PAS!</button>
+            <button style="background-color: pink; color: white;" id="stop" onclick="stop()">Un peu de sport...</button>
+            <button style="background-color: pink; color: white;" id="resume" onclick="resume()">Mon parcours et... mon avenir?</button>
+            </div>
+        </div>
+
+<!-- Mes passions -->
+
+        <div id="carouselPassion" class="carousel slide" data-bs-ride="carousel" style="
+        left: 3%;
+        top: 0; display: none;">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators"  
+            " >
+              <button type="button" data-bs-target="#carouselPassion" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#carouselPassion" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carouselPassion" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#carouselPassion" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#carouselPassion" data-bs-slide-to="4"></button>
+              <button type="button" data-bs-target="#carouselPassion" data-bs-slide-to="5"></button>
+              <button type="button" data-bs-target="#carouselPassion" data-bs-slide-to="6"></button>
+              <button type="button" data-bs-target="#carouselPassion" data-bs-slide-to="7"></button>
+              <button type="button" data-bs-target="#carouselPassion" data-bs-slide-to="8"></button>
+              <button type="button" data-bs-target="#carouselPassion" data-bs-slide-to="9"></button>
+            </div>
+            
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner"  >
+              <div class="carousel-item active">
+                <img src="https://mo.ciner.com.tr/showtv/iu/1920x1080_6/cukur.jpg?v=1657786626" alt="Çukur" class="d-block" style="width:600px; height: 320px; ">
+                <div class="carousel-caption">
+                  <h3>Çukur</h3>
+                  <p>MA série préférée all time ou du moins mon dizi n°1!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv85M7R7ybQnCdMqpO5Q8i75HjHpm4gNy3BWwfV6LeomRdm_1uX1oWWs8Oo0Htr0tS5rSZzx8yYdwqnbqCKzhEue2VavOGf2G0KwwWiipiK5zRbSZJz9c-nHUXfLtNoR1mmnev76vXQxepZojJvEdcw9MNYqPRMs0vr-LpULG-jc_WGjwDxkpfBFIxiw/s16000/TSLD.jpg" alt="The Spanish love deception" class="d-block" style="width:600px; height: 320px; ">
+                <div class="carousel-caption">
+                  <h3>The Spanish love deception</h3>
+                  <p>Je lis beaucoup de livres dont des romances qui me font rêver... Et celui-ci fait partie de mes nombreux coups de cœur littéraires!</p>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="https://wallpapercave.com/wp/wp7151246.jpg" alt="Disney" class="d-block" style="width:600px; height: 320px; ">
+                <div class="carousel-caption">
+                  <h3>Disney</h3>
+                  <p>Que serait une enfance sans avoir vécu la magie de Disney? J'aime trop m'identifier à des personnages fictifs!</p>
+                </div>  
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.destinationdijon.com/wp-content/uploads/wpetourisme/Salles-3eme-Renaissance-MdBA-2019-1.jpg" alt="Art" class="d-block" style="width:600px; height: 320px; ">
+                <div class="carousel-caption">
+                  <h3>Art</h3>
+                  <p>Je trouve ça tellement fascinant que l'art soit retranscrit dans les musées, les galleries, le théâtre etc... Ça me passionne tellement.</p>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="https://icodeayush.github.io/TheWeekndGSAPScrollEffect/img/asset%201.jpeg" alt="Musique" class="d-block" style="width:600px; height: 320px; ">
+                <div class="carousel-caption">
+                  <h3>Musique</h3>
+                  <p>Inutile d'en dire plus... Tu vois ce mec? Bah je OVERTHINK ENCORE PLUS quand je l'écoute!!!</p>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/originals/e6/57/89/e6578946d9b29958e2e33483206cb405.webp" alt="Podcast" class="d-block" style="width:600px; height: 320px; ">
+                <div class="carousel-caption">
+                  <h3>Podcast</h3>
+                  <p>Comme il n'y a pas que la musique dans la vie, j'aime également me cultiver sur différents sujets enrichissants. Justin Baldoni, ça te dit quelque chose?</p>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DA2E198288BFCA56AB53340211B38DE7134E40E4521EDCAFE6FFB8CD69250DE9/scale?width=2880&aspectRatio=1.78&format=jpeg" alt="Marvel" class="d-block" style="width:600px; height: 320px; ">
+                <div class="carousel-caption">
+                  <h3></h3>
+                  <p>Je l'ai dit récemment, je suis pas une geek! Mais ça m'empêche pas de kiffer Marvel, par contre ne me parlez pas de Tony Stark...</p>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="https://cdn.vox-cdn.com/thumbor/WR2f-PO6_gC1qy0K6wY7KOUicgQ=/0x360:2592x1656/fit-in/1200x600/cdn.vox-cdn.com/uploads/chorus_asset/file/15002495/friendscast.0.0.1429818191.jpg" alt="Sitcom" class="d-block" style="width:600px; height: 320px; ">
+                <div class="carousel-caption">
+                  <h3>Sitcom</h3>
+                  <p>Est-ce que c'est une surprise même? Friends always in my heart! Mais les sitcoms en général ça me parle tellement. </p>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.reconversionprofessionnelle.org/wp-content/uploads/2017/02/metiers-qui-font-voyager.jpg" alt="Voyager" class="d-block" style="width:600px; height: 320px; ">
+                <div class="carousel-caption">
+                  <h3>Voyager</h3>
+                  <p>Le monde est vaste. Découvrir de nouveaux horizons et de nouvelles cultures c'est absolument vital pour moi.</p>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="https://img4.goodfon.com/wallpaper/nbig/d/f8/koza-priroda-leto.jpg" alt="Nature" class="d-block" style="width:600px; height: 320px; ">
+                <div class="carousel-caption">
+                  <h3>Nature</h3>
+                  <p>Je me vois nulle part ailleurs que dans un champ ou une ferme remplie de chèvres. La nature est primordiale pour moi et j'aspire à une vie paisible.</p>
+                </div> 
+              </div>
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPassion" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPassion" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+
+          <!-- personnages -->
+
+          <table class="table table-hover table-dark" id="tableENFJ" style="display: none;  margin-left: 50%; ">
+            <thead>
+              <tr class="table-danger">
+                <th scope="col">#</th>
+                <th scope="col">Personnages</th>
+                <th scope="col">Background</th>
+                <th scope="col">Photo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Zendaya</td>
+                <td>Shake it up!</td>
+                <td><img src="https://static1.personality-database.com/profile_images/f07b536596574b0e94de288a80de6d73.png" style="width: 66px; height: 66px;"></td>
+
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Love Quinn</td>
+                <td>You (2018)</td>
+                <td><img src="https://static1.personality-database.com/profile_images/2afdf6835383461bbc5ba52f61d5be7a.png" style="width: 66px; height: 66px;"></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Selena Gomez</td>
+                <td>Pop & Contemporary</td>
+                <td><img src="https://static1.personality-database.com/profile_images/3ce1e324b59d4470ab31c0a91fd6623d.png" style="width: 66px; height: 66px;"></td>
+              </tr>
+              <tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Meghan Markle</td>
+                  <td>Actors</td>
+                  <td><img src="https://static1.personality-database.com/profile_images/53c0a95907dd43cfa953123468f4ebeb.png" style="width: 66px; height: 66px;"></td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Nora Tyler Bhing</td>
+                  <td>Friends (1994)</td>
+                  <td><img src="https://static1.personality-database.com/profile_images/c82033a17098488297d1a591dfeda6a1.png" style="width: 66px; height: 66px;"></td>
+                </tr>
+                <tr>
+                <th scope="row">6</th>
+                <td>Madison Beer</td>
+                <td>Pop & Contemporary</td>
+                <td><img src="https://static1.personality-database.com/profile_images/a50b9c77b47745d19002f4c2fc98a11c.png" style="width: 66px; height: 66px;"></td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Burcu Hoca</td>
+                <td>Love 101 (Aşk 101)</td>
+                <td><img src="https://static1.personality-database.com/profile_images/b4e586efa3864a5e81ba3bdb03c291e3.png" style="width: 66px; height: 66px;"></td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <!-- NE CLIQUE PAS -->       
+            
+            <button type="button" id="btnModal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" style="display: none;">
+              À mes risques et périls...
+            </button>
+             
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Je dois chercher mes médicaments, mon allergie a refait surface... <span class="ec ec-nauseated-face"></span>
+                  </h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <img src="fruits.gif">
+                  <p style="font-style: italic;">Je peux manger que des fruits à coque, boire du jus de fruits, ou même le mélange entre le sucré/salé dans les tajines aux pruneaux mais POUR LE RESTE J'Y TOUCHE PAS !!! </p>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">X</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+
+          <iframe id="videoBarca" style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/5mRnb1wUopw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- Timeline -->
+    
+    <section style="background-color: #F0F2F5; display: none;" id="timeLine">
+      <div class="container py-5">
+        <div class="main-timeline-2">
+          <div class="timeline-2 left-2">
+            <div class="card">
+              <img src="https://cdn.rosemood.be/media/Event/2019-05-13/10218926/cache/mariage-2021_jardin-public-11-fr-d.jpg" class="card-img-top"
+                alt="Responsive image">
+              <div class="card-body p-4">
+                <h4 class="fw-bold mb-4">Mariage? Déménagement? </h4>
+                <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2025-...?</p>
+                <p class="mb-0">Je suis pas devin mais comme la vie d'adulte a été définitivement lancée, il y a de grandes chances qu'à ce stade de ma vie je serai mariée!? Même si c'est dans loooooooongtemps, c'est toujours bien de savoir se projeter. Avoir mon propre chez-moi c'est une belle façon d'ouvrir un nouveau chapitre dans ma vie, et on verra où tout ça ça va mener... </p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-2 right-2">
+            <div class="card">
+              <img src="https://www.qualitedevieautravail.org/wp-content/uploads/2020/12/femme-daffaires.jpg" class="card-img-top"
+                alt="Responsive image">
+              <div class="card-body p-4">
+                <h4 class="fw-bold mb-4">Time to work!</h4>
+                <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2024</p>
+                <p class="mb-0">Après avoir bien savouré mon diplôme et m'être reposée bien comme il faut, il est temps pour moi de me lancer dans la vie active. Ce n'est que le début de ma longue carrière insha'Allah, on gravira les échelons au fur et à mesure du temps jusqu'à ce que je devienne une véritable entrepeneuse. </p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-2 left-2">
+            <div class="card">
+              <img src="https://data.whicdn.com/images/64877085/original.jpg" class="card-img-top"
+                alt="Responsive image">
+              <div class="card-body p-4">
+                <h4 class="fw-bold mb-4">Bye bye school!</h4>
+                <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2023</p>
+                <p class="mb-0">L'année prochaine risque d'être un moment charnière pour moi, si tout se passe bien je décrocherai mon master ce qui signifiera par la même occasion la fin de mon parcours scolaire officiellement. Un moment d'émotion forcément mais également un moment de soulagement après avoir fourni tant d'efforts. On va fêter ça comme il se doit!</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-2 right-2">
+            <div class="card">
+              <img src="https://media.timeout.com/images/105859738/750/422/image.jpg" class="card-img-top"
+                alt="Responsive image">
+              <div class="card-body p-4">
+                <h4 class="fw-bold mb-4"> İstanbul'a gidelim!</h4>
+                <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2022</p>
+                <p class="mb-0">Rien de majeur à signaler si ce n'est que j'ai réussi mon année Al Hamdulilah, ça continue à poursuivre tout doucement son petit bonhomme de chemin. Ce qui passe par un mémoire médiatique épuisant mais avec un chouette groupe et en postulant pour un stage à l'étranger. Istanbul en ligne de mire et donc Nahed Situations sera parée!</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-2 left-2">
+            <div class="card">
+              <img src="https://www.orientation.com/articles/wp-content/uploads/2020/08/difference-licence-bachelor.jpg" class="card-img-top"
+                alt="Responsive image">
+              <div class="card-body p-4">
+                <h4 class="fw-bold mb-4">Bachelor dans la poche!</h4>
+                <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2021</p>
+                <p class="mb-0">J'ai décroché mon bachelor au cours de cette année-là, malheureusement à cause du COVID j'ai pas eu une cérémonie de proclamation digne de ce nom mais ça m'empêche pas d'être très heureuse d'avoir accompli la moitié du boulot. Le plus dur était désormais derrière moi, j'ai gagné ainsi une dose de motivation supplémentaire pour entamer mon deuxième cycle et pouvoir terminer en beauté avec un master tout fraîs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </div>
+    
+    <script src="script.js">
+    </script>
+
+    <audio controls autoplay id="audioFriends"> <source src="I'll Be There For You (Friends Theme Song)- [PagalWorld.NL].mp3" </audio>
+    <audio id="audioBTR" src="Big Time Rush - Worldwide.mp3"></audio>
+</body>
+</html>
