@@ -192,8 +192,6 @@ $(window).on('load', function() {
     $('#no').delay(3000).fadeIn()
   })
 
- var audioFriends = document.getElementById("audioFriends");
-
 
 function hideButton(x)
  {
@@ -203,6 +201,7 @@ function hideButton(x)
   document.getElementById('tekstBubbleYes').style.display = "block";
   document.getElementById('mainCharacter').style.display = "none";
   document.getElementById('happyCharacter').style.display = "block";
+  var audioFriends = document.getElementById("audioFriends");
   audioFriends.play();
 
   $(window).on('load')
@@ -219,6 +218,7 @@ function hideButton(x)
   document.getElementById('madCharacter').style.display = "block";
   document.getElementById('mainCharacter').style.display = "none";
   document.getElementById('happyCharacter').style.display = "none";
+  var audioFriends = document.getElementById("audioFriends");
   audioFriends.play();
   $(window).on('load')
     $('#yesAfterNo').delay(2000).fadeIn()
@@ -264,6 +264,7 @@ function hideButton(x)
   document.getElementById('speech-bubbleEnd').style.display = "block"; 
   document.getElementById('speech-bubble').style.display = "none"; 
     var audioBTR = document.getElementById("audioBTR");
+    var audioFriends = document.getElementById("audioFriends");
     audioFriends.pause();
     audioBTR.play();
  }
