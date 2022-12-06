@@ -260,7 +260,9 @@ function hideButton(x)
   document.getElementById('speech-bubble').style.display = "none"; 
     var audioBTR = document.getElementById("audioBTR");
     var audioFriends = document.getElementById("audioFriends");
+    var audioFriends1 = document.getElementById("audioFriends1");
     audioFriends.pause();
+    audioFriends1.pause();
     audioBTR.play();
  }
 
