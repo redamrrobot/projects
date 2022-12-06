@@ -190,6 +190,8 @@ act1.addEventListener('click', () => {
 $(window).on('load', function() {
     $('#yes').delay(3000).fadeIn()
     $('#no').delay(3000).fadeIn()
+    var audioFriends = document.getElementById("audioFriends");
+    audioFriends.play();
   })
 
 
