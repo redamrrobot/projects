@@ -188,10 +188,11 @@ act1.addEventListener('click', () => {
 */
 
 $(window).on('load', function() {
+ var audioFriends = document.getElementById("audioFriends");
+  audioFriends.play();
     $('#yes').delay(3000).fadeIn()
     $('#no').delay(3000).fadeIn()
-    var audioFriends = document.getElementById("audioFriends");
-    audioFriends.play();
+    
   })
 
 
@@ -203,8 +204,6 @@ function hideButton(x)
   document.getElementById('tekstBubbleYes').style.display = "block";
   document.getElementById('mainCharacter').style.display = "none";
   document.getElementById('happyCharacter').style.display = "block";
-  var audioFriends = document.getElementById("audioFriends");
-  audioFriends.play();
   
   $(window).on('load')
     $('#showMenu').delay(5000).fadeIn()
@@ -220,8 +219,6 @@ function hideButton(x)
   document.getElementById('madCharacter').style.display = "block";
   document.getElementById('mainCharacter').style.display = "none";
   document.getElementById('happyCharacter').style.display = "none";
-  var audioFriends = document.getElementById("audioFriends");
-  audioFriends.play();
   
   $(window).on('load')
     $('#yesAfterNo').delay(2000).fadeIn()
